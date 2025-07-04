@@ -12,6 +12,6 @@ while tries > 0:
             if tries > 0:
                 print(f"PEEEEN! Errou! Restam {tries} tentativas!")
             else:
-                print("Infelizmente acabaram as tentativas.. Volte amanhã!")
+                print("Infelizmente acabaram as tentativas.. Volte amanhã!!")
     except ValueError:
         print("Esse não é um valor inteiro! Tente novamente")    
