@@ -19,13 +19,17 @@ while True:
     except ValueError:
         print("Valor não válido! Quantidade de alunos deve ser inteiro!")
 
+media_geral = []
 for aluno, notas in turma.items():
     if notas:
         media = sum(notas) / len(notas)
+        media_geral.append(media)
         if media >= 7:
             print(f"{aluno} Está Aprovado com média {media:.2f}! Suas notas foram:")
             print(*notas)
         else:
             print(f"{aluno} Está Reprovado com média {media:.2f}!")
+media_geral_turma = sum(media_geral) / len(media_geral)
+print(f"Media geral da turma foi: {media_geral_turma}")
 
 
